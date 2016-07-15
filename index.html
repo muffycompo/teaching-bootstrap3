@@ -1,55 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Demo HTML</title>
-	<style>
-		#mainbody { 
-			color: #444; 
-			background-color: #eee;
-			margin: 0px auto;
-			width: 760px;
-			padding: 30px;
-		}
-		#loginTitle { text-align: center; }
-		.inputField {
-			width: 250px;
-			padding: 8px;
-		}
-		.loginBtn {
-			padding: 5px 15px;
-			border: 1px solid #444;
-			border-radius: 5px;
-			cursor: pointer;
-			background: #fff;
-		}
-		.usiju {
-			display: block;
-			width: 300px;
-			margin: 0px auto;
-
-		}
-	</style>
+	<title>Demo HTML - Boostrap</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
 <body>
-	<div id="mainbody">
-		
-		<h3 id="loginTitle">Login Below</h3>
-		<form action="#" class="usiju">
-			<p>
-				<label for="username">Username:</label><br>
-				<input type="text" id="username" class="inputField">
-			</p>
-			<p>
-				<label for="password">Password:</label><br>
-				<input type="password" id="password" class="inputField">
-			</p>
-			<p>
-				<input type="submit" value="Login" class="loginBtn">
-			</p>
-		</form>
-
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4 col-md-offset-4">
+				<form action="#">
+					<div class="form-group">
+					    <label for="username">Username</label><br>
+					    <input type="text" class="form-control" id="username">
+			  		</div>
+					<div class="form-group">
+					    <label for="password">Password</label><br>
+					    <input type="password" class="form-control" id="password">
+			  		</div>
+					<div>
+					    <button class="btn btn-primary"><span class="glyphicon glyphicon-user"></span> Login</button>
+			  		</div>
+				</form>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
