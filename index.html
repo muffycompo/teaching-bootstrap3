@@ -3,14 +3,19 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Demo HTML - Boostrap</title>
+	<title>Demo HTML - Bootstrap</title>
 	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 	<div class="container">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
-				<form action="#">
+				<p class="text-center"><img src="images/logo.png" alt="Company Logo" class="logo"></p>
+				<!-- <img src="images/logo.png" alt="Company Logo" class="logo img-center"> -->
+				<div class="panel panel-default">
+				  <div class="panel-body">
+				    <form action="dashboard.html">
 					<div class="form-group">
 					    <label for="username">Username</label><br>
 					    <input type="text" class="form-control" id="username">
@@ -21,8 +26,12 @@
 			  		</div>
 					<div>
 					    <button class="btn btn-primary"><span class="glyphicon glyphicon-user"></span> Login</button>
+					    <a href="#" class="btn btn-success pull-right"><span class="glyphicon glyphicon-plus"></span> Sign Up</a>
 			  		</div>
 				</form>
+				  </div>
+				</div>
+				
 			</div>
 		</div>
 	</div>
